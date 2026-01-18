@@ -7,6 +7,7 @@ using Microsoft.EntityFrameworkCore;
 [Route("clients")]
 public class ClientsController : ControllerBase
 {
+    // Dependency injection
     private readonly ClientDbContext _context;
 
     public ClientsController(ClientDbContext context)
@@ -14,18 +15,18 @@ public class ClientsController : ControllerBase
         _context = context;
     }
 
-    [HttpGet]
+    [HttpGet]  // Read client data
     public async Task<IEnumerable<Client>> GetAll()
         => await _context.Clients.ToListAsync();
 
-    [HttpGet("{id}")]
+    [HttpGet("{id}")]  // Read id
     public async Task<ActionResult<Client>> Get(int id)
     {
         var client = await _context.Clients.FindAsync(id);
         return client == null ? NotFound() : client;
     }
 
-    [HttpPost]
+    [HttpPost]  // Create client data
     public async Task<ActionResult<Client>> Create(Client client)
     {
         _context.Clients.Add(client);
@@ -33,7 +34,7 @@ public class ClientsController : ControllerBase
         return CreatedAtAction(nameof(Get), new { id = client.Id }, client);
     }
 
-    [HttpPut("{id}")]
+    [HttpPut("{id}")]  // Update
     public async Task<IActionResult> Update(int id, Client updated)
     {
         if (id != updated.Id) return BadRequest();
@@ -43,7 +44,7 @@ public class ClientsController : ControllerBase
         return NoContent();
     }
 
-    [HttpDelete("{id}")]
+    [HttpDelete("{id}")]  // Remove
     public async Task<IActionResult> Delete(int id)
     {
         var client = await _context.Clients.FindAsync(id);
