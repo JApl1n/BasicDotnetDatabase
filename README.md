@@ -4,4 +4,4 @@
 
 
 ### Initial UI:
-![image](https://github.com/JApl1n/BasicDotnetDatabase/tree/main/Images/InitialSwaggerUI.png)
+![image](Images/InitialSwaggerUI.png)
