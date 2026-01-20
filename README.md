@@ -5,7 +5,7 @@
 
 ### UI with client API:
 This is a barebone sproject so the user has access to all the data and can change it however they wantbut has quite a bit on control over the data and that was the intention.
-<img src="WholeUI.png" alt="UI" width="200"/>
+<img src="Images/WholeUI.png" alt="UI" width="200"/>
 
 ![image](Images/WholeUI.png)
 ![image](Images/AddItemFunction.png)
