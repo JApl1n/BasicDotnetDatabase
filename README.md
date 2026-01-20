@@ -59,7 +59,7 @@ No external services are required. The project runs fully locally using SQLite.
    dotnet run
 
 4. Open Swagger UI at:
-   http://localhost:<port>/swagger
+   http://localhost:port/swagger
 
 On first run, the application will:
 - Create a local SQLite database file
