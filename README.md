@@ -6,31 +6,31 @@
 ### UI with client API:
 This is a barebone sproject so the user has access to all the data and can change it however they wantbut has quite a bit on control over the data and that was the intention.
 
-####(1) Overall UI
+#### (1) Overall UI
 This is just how the run local host looks.
 ![image](Images/WholeUI.png)
 
-####(2) Add Item
+#### (2) Add Item
 This function allows the user to edit a json file for input to the database, they cna only change the name and email, IDs are indexed by the system automatically.
 ![image](Images/AddItemFunction.png)
 
-####(3) Get All
+#### (3) Get All
 Displays list of all entries in database ordered by index.
 ![image](Images/GetAllFunction.png)
 
-####(4) Edit Item
+#### (4) Edit Item
 Edit an entry's json file. Please dont edit the index by the way.
 ![image](Images/EditFunction.png)
 
-####(5) Get All Post Edit
+#### (5) Get All Post Edit
 All entries after the edit. Note index 111 has been updated.
 ![image](Images/GetallAfterEdit.png)
 
-####(6) Get Specific ID
+#### (6) Get Specific ID
 Displays data of chosen id. 
 ![image](Images/GetSpecificIDFunction.png)
 
-####(7) Delete All
+#### (7) Delete All
 Delete all entries in database, requires text confirmation. 
 ![image](Images/DeleteAllFunction.png)
 
