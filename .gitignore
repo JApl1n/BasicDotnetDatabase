@@ -1,0 +1,2 @@
+# Ignore .db files for clean slate for cloning
+*.db
